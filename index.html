@@ -1,0 +1,65 @@
+<html>
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Touch Focus - Stay on Target. Achieve Your Goals.</title>
+  <meta name="description" content="Touch Focus helps you get things done right now.">
+
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="scripts/html5shiv.js"></script>
+  <![endif]--> 
+</head>
+<body>
+  <h1>Touch Focus</h1>
+
+  <p>You live in the age of distraction. You don't have time to waste time.</p>
+
+  <p>Forget the milk and stay focused on your most important, immediate goal.</p>
+
+  <form id="focus">
+    <fieldset>
+      <legend>I will...</legend>
+      <input id="goal" name="name" type="text" placeholder="learn to code" required autofocus>    
+    </fieldset>
+
+    <fieldset id="commitment">
+      <legend>...for the next...</legend>
+      <ol>
+        <li>
+          <input id="30-minutes" name="commitment" type="radio" value="0.5">
+          <label for="30-minutes">30 Minutes.</label>
+        </li>
+        <li>
+          <input id="1-hour" name="commitment" type="radio" value="1">
+          <label for="1-hour">1 Hour.</label>
+        </li>
+        <li>
+          <input id="2-hours" name="commitment" type="radio" value="2">
+          <label for="2-hours">2 Hours.</label>
+        </li>
+        <li>
+          <input id="4-hours" name="commitment" type="radio" value="4">
+          <label for="4-hours">4 Hours.</label>
+        </li>
+      </ol>
+    </fieldset>
+    
+    <fieldset>
+      <input type="submit" value="Start Now">
+    </fieldset>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>
+    (function () {
+      $('button').click(function() {
+        var $this = $(this);
+        console.log(this);
+        var estimate = $this.data('estimate');
+        console.log(estimate);
+      });
+    })();
+  </script>
+</body>
+</html>
