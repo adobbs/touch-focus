@@ -1,1 +1,0 @@
-Touch Focus is under development.
