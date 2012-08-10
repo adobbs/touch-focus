@@ -53,11 +53,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script>
     (function () {
-      $('button').click(function() {
-        var $this = $(this);
-        console.log(this);
-        var estimate = $this.data('estimate');
-        console.log(estimate);
+      $('input[type=submit]').on('click', function() {
+        console.log($(this));
+
+        $('<h2></h2>', {
+          text: 'Go go go!'
+        }).insertAfter('form');
       });
     })();
   </script>
