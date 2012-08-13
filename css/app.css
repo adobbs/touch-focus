@@ -1,0 +1,108 @@
+.done-true {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/*html, body, h1, form, fieldset, legend, ol, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 62.5%;
+  line-height: 1;
+  background: #fff;
+  color: #000;
+  font-family: arial, helvetica, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 4.8em;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+ol, ul {
+  list-style: none;
+  background: #aaa;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+}
+
+form {
+  font-size: 1.6em;
+  background: #ccc;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+}
+
+form fieldset {
+  margin-bottom: 20px;
+}
+form fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+form legend {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+
+form fieldset#commitment label:hover,
+form fieldset#commitment input:hover,
+form input[type=submit] {
+  cursor: pointer;
+}
+
+form input:not([type=radio]) {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.5em;
+  outline: none;
+  padding: 5px;
+}
+
+form input[type=text] {
+  background: #eee;
+  width: 400px;
+}
+
+form input[type=submit]:hover {
+  background: #aaa;
+}
+
+form input:not([type=submit]):focus {
+  background: #fff;
+}
+
+form input[type=submit] {
+  display: block;
+  background: #777;
+  color: #fff;
+  font-family: arial, helvetica, sans-serif;
+  margin: auto;
+  padding: 7px 25px;
+  text-transform: uppercase;
+  width: 200px;
+}*/
