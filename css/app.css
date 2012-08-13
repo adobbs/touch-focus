@@ -1,8 +1,3 @@
-.done-true {
-  text-decoration: line-through;
-  color: gray;
-}
-
 html, body, h1, form, fieldset, legend, ol, li {
   margin: 0;
   padding: 0;
@@ -68,25 +63,6 @@ form {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 20px;
-  /*width: 400px;*/
-}
-
-form fieldset {
-  margin-bottom: 20px;
-}
-form fieldset:last-of-type {
-  margin-bottom: 0;
-}
-
-form legend {
-  font-size: 1.6em;
-  padding-bottom: 10px;
-}
-
-form fieldset#commitment label:hover,
-form fieldset#commitment input:hover,
-form input[type=submit] {
-  cursor: pointer;
 }
 
 form input:not([type=radio]) {
@@ -109,6 +85,7 @@ form input[type=text] {
 
 form input[type=submit] {
   display: block;
+  cursor: pointer;
   background: #777;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
