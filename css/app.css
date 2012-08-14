@@ -28,7 +28,8 @@ body {
 h1 {
   font-size: 4.8em;
   font-weight: normal;
-  margin-bottom: 20px;
+  line-height: 1;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -39,6 +40,10 @@ h2 {
 
 p {
   font-size: 1.6em;
+}
+
+#goal-entry {
+  margin-top: 30px;
 }
 
 ul {
@@ -89,7 +94,7 @@ form input[type=submit] {
   background: #777;
   color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 10px auto 5px auto;
+  margin: 10px auto 0 auto;
   padding: 10px 10px;
   text-transform: uppercase;
   width: 200px;

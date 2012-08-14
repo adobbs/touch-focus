@@ -1,8 +1,8 @@
-function TodoCtrl($scope) {
-  $scope.todos = [];
+function GoalCtrl($scope) {
+  $scope.goals = [];
  
-  $scope.addTodo = function() {
-    $scope.todos.push({text:$scope.todoText, done:false});
-    $scope.todoText = '';
+  $scope.addGoal = function() {
+    $scope.goals.push({text:$scope.goalText, done:false});
+    $scope.goalText = '';
   };
 }

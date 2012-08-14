@@ -1,13 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html ng-app>
   <head>
     <meta charset="UTF-8">
-    <title>Touch Focus - Stay on Target. Achieve Your Goals.</title>
+    <title>Touch Focus - Achieve Your Goals.</title>
     <meta name="description" content="Touch Focus helps you get things done right now.">
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
-    <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
-    
+
     <script src="js/app.js"></script>
     <link rel="stylesheet" href="css/app.css">
     
@@ -20,17 +19,15 @@
     <section id="content">
       <h1>Touch Focus</h1>
 
+      <h2>Stay on Target</h2>
       <p>You live in the age of distraction. You don't have time to waste time.</p>
-
       <p>You need a don't do list not a to-do list.</p>
-
       <p>Forget the milk and stay focused on your most important, immediate goal.</p>
       
-      <h2>I will...</h2>
-      <div ng-controller="TodoCtrl">
-        <form ng-submit="addTodo()">
-          <input type="text" ng-model="todoText"  size="30"
-                 placeholder="enter my goal here">
+      <div id="goal-entry" ng-controller="GoalCtrl">
+        <h2>I will...</h2>
+        <form ng-submit="addGoal()">
+          <input type="text" ng-model="goalText" placeholder="enter my goal here">
           <input class="btn-primary" type="submit" value="Start Now">
         </form>
       </div>
