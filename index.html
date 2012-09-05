@@ -1,31 +1,18 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="focus">
   <head>
     <meta charset="UTF-8">
     <title>Touch Focus - Achieve Your Goals.</title>
     <meta name="description" content="Touch Focus helps you get things done right now.">
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script src="http://code.angularjs.org/angular-resource-1.0.1.min.js"></script>
 
-    <script src="js/app.js"></script>
-    <link rel="stylesheet" href="css/app.css">
-    
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-    <![endif]-->
+    <script src="js/focus.js"></script>
+    <link rel="stylesheet" href="css/focus.css">
   </head>
 
   <body>
-    <section id="content">
-      <h1>Touch Focus</h1>
-      <h2>Stay on target.</h2>
-      
-      <div id="goal-entry" ng-controller="GoalCtrl">
-        <form ng-submit="addGoal()">
-          <input type="text" ng-model="goalText" placeholder="Enter my goal here">
-          <input class="btn-primary" type="submit" value="Start Now">
-        </form>
-      </div>
-    </section>
+      <div ng-view></div>
   </body>
 </html>

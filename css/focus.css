@@ -17,12 +17,9 @@ body {
   background: #fff;
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 20px;
-}
-
-#content {
   width: 320px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
@@ -40,8 +37,19 @@ h2 {
   margin-bottom: 10px;
 }
 
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+}
+
 #goal-entry {
   margin-top: 30px;
+}
+
+#timer, #rating {
+  margin-top: 40px;
+  font-size: 4.8em;
 }
 
 form {
@@ -55,6 +63,7 @@ form input {
   -khtml-border-radius: 3px;
   border-radius: 3px;
   outline: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
 }
 
@@ -70,7 +79,6 @@ form input[type=submit] {
   cursor: pointer;
   background: #777;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px auto 0 auto;
   padding: 10px 10px;
   text-transform: uppercase;
