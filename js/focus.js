@@ -1,39 +1,30 @@
 var app = angular.module('focus', []).
   config(function($routeProvider) {
   $routeProvider.
-    when('/', {templateUrl: 'entry.html', controller: GoalCtrl}).
-    when('/timer', {templateUrl: 'timer.html', controller: TimerCtrl}).
-    when('/rating', {templateUrl: 'rating.html', controller: SignUpCtrl}).
+    when('/', {templateUrl: 'entry.html', controller: 'GoalCtrl'}).
+    when('/timer', {templateUrl: 'timer.html', controller: 'GoalCtrl'}).
+    when('/rating', {templateUrl: 'rating.html'}).
     otherwise({redirectTo:'/'});
 });
 
-app.factory('goal', function() {
-    var goalService = {};
-    
-    goalService.text = 'default';
-
-    return goalService;
-});
-
-function GoalCtrl($scope, $location, goal) {
+function GoalCtrl($scope, $rootScope, $location) {
   $scope.addGoal = function() {
     console.log("Entered a goal.");
-    goal = {text:$scope.goalText, done:false};
+    $rootScope.goalText = $scope.goalText;
     console.log($scope.goalText);
-    console.log(goal.text);
+    console.log($rootScope.goalText);
     $location.path('/timer');
   };
 
   $scope.declareDone = function () {
-    $scope.goalText = goal.text;
     console.log("I'm Done!");
     console.log($scope.goalText);
-    console.log(goal.text);
+    console.log($rootScope.goalText);
     $location.path('/rating');
   };  
 }
 
-function TimerCtrl($scope, $location, $timeout) {
+function TimerCtrl($scope, $timeout) {
   $scope.minutes = 25;
   $scope.seconds = 60;
   $scope.displaySeconds = '00';
