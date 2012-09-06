@@ -1,9 +1,8 @@
-<p>Display my goal up <br /> to two lines long...</p>
+<p id="timer">{{minutes}}:{{displaySeconds}}</p>
 
-<p id="timer">25:00</p>
-
-<div id="timer-done" ng-controller="TimerCtrl">
-  <form ng-submit="declareDone()">
+<div id="timer-done">
+  <!-- <p>Test: {{goalText}}</p> -->
+  <form ng-submit="declareDone()" ng-controller="GoalCtrl">
     <input class="btn-primary" type="submit" value="I'm Done">
   </form>
 </div>
